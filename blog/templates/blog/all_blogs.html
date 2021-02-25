@@ -1,12 +1,20 @@
+{% extends 'C:\Users\nowac\Django\personal_portfolio-project\portfolio\templates\base.html' %}
+
+{% block content %}
+
 <h1>Rafael's Blogs</h1>
 
-{% for project in projects %}
+<h2>Rafael written {{ blogs.count}} blog{{ blogs.count|pluralize }}</h2>
 
-<h2>{{ project.title }}</h2>
-<br>{{ project.date }}
-<p>{{ project.description }}</p>
-{% if project.url %}
-<br><a href="{{ project.url }}">Link</a>
+{% for blog in blogs %}
+
+<a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+<br>{{ blog.date|date:'d M Y'|upper }}
+<p>{{ blog.description| truncatechars:100 }}</p>
+{% if blog.url %}
+<br><a href="{{ blog.url }}">Link</a>
 {% endif %}
 
 {% endfor %}
+
+{% endblock %}
