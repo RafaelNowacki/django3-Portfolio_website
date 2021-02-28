@@ -14,9 +14,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="{% static "portfolio/Logo.png" %}">
+  <link rel="icon" type="image/png" href="{% static "portfolio/logo.png" %}">
 
-  <title>Nick Walter</title>
+  <title>R. Nowacki portfolio</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "portfolio/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
-        <span>Nick Walter</span>
+        <img src="{% static "portfolio/cover_navbar.png" %}" width="180" height="30" class="d-inline-block align-top" alt="Rafael's logo">
+<!--        <span>R. Nowacki</span>-->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,13 +36,13 @@
             <a class="nav-link" href="{% static "portfolio/resume.pdf" %}">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/nick-walter/" target="_blank">LinkedIn</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/rafal-nowacki/" target="_blank">LinkedIn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/ZappyCode" target="_blank">Twitter</a>
+            <a class="nav-link" href="https://www.facebook.com/r.noname.97/" target="_blank">Facebook</a>
           </li>
           <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Live CV</a>
           </li>
         </ul>
       </div>
